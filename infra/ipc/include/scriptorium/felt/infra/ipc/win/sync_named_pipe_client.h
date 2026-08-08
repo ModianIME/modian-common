@@ -1,12 +1,13 @@
 #pragma once
 
+#include <string>
 #include <string_view>
 #include <mutex>
 
 #include "scriptorium/felt/core/ipc/isync_ipc_client.h"
 
 namespace scriptorium::felt::infra::ipc {
-	class sync_named_pipe_client : public felt::core::ipc::isync_ipc_client<std::string, std::string> {
+	class sync_named_pipe_client : public core::ipc::isync_ipc_client<std::string, std::string> {
 	public:
 		explicit sync_named_pipe_client(std::string_view pipe_name);
 		~sync_named_pipe_client() override;

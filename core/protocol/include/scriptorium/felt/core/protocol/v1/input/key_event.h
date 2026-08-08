@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <cstdint>
 
 namespace scriptorium::felt::core::protocol::input::v1 {
 	class key_event {
