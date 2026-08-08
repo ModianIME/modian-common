@@ -8,6 +8,10 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
+if (MSVC)
+    add_compile_options("/utf-8")
+endif()
+
 add_executable(scriptorium_felt_tests
     test_main.cpp
     core/protocol/key_event_test.cpp
