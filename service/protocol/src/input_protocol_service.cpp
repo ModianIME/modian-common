@@ -8,13 +8,13 @@ namespace scriptorium::felt::service {
     namespace {
         nlohmann::json build_candidate_info(const core::protocol::input::v1::candidate_info& candidate_info) {
             return {
-                {"payload", candidate_info.payload}
+                {"word", candidate_info.word}
             };
         }
 
         core::protocol::input::v1::candidate_info parse_candidate_info(const nlohmann::json& j) {
             return core::protocol::input::v1::candidate_info{
-                j.value("payload", "")
+                j.value("word", "")
             };
         }
     }

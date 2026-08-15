@@ -10,7 +10,7 @@ namespace scriptorium::felt::core::protocol::input::v1 {
 	};
 
     struct candidate_info {
-        std::string payload{};
+        std::string word{};
     };
 
 	struct instruction {
