@@ -13,6 +13,8 @@ Our ultimate goals are:
 2. **Frictionless Integration**: Serving as an SDK for the third-party developer ecosystem. In the future, developers can simply include this library to easily build customized plugins for Scriptorium.
 3. **Zero-Intrusion Clean Architecture**: Strictly adhering to the Dependency Inversion Principle (DIP). Highly modularized to completely decouple core business logic from OS-specific APIs.
 
+---
+
 ## Architecture
 
 This repository strictly follows Clean Architecture principles and is divided into the following core layers (CMake targets):
@@ -26,12 +28,22 @@ This repository strictly follows Clean Architecture principles and is divided in
 * **Test Infra (`scriptorium::felt::test_infra::*`)**
   Provides unified mocks and testing scaffolds for the entire ecosystem.
 
+---
+
 ## Getting Started
 
 This library natively supports CMake's `FetchContent`, allowing for extremely smooth integration into your C++ projects.
 
 *(Detailed API documentation and code examples will be added upon the official 1.0 release.)*
 
+---
+
 ## License
 
-This project is licensed under the [Apache License 2.0](LICENSE).
+Licensed under the **Apache License 2.0**.
+
+See `LICENSE` for details.
+
+---
+
+*Copyright © 2026 ScriptoriumLab.*
