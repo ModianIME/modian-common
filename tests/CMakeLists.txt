@@ -13,7 +13,6 @@ if (MSVC)
 endif()
 
 add_executable(scriptorium_felt_tests
-    test_main.cpp
     core/protocol/key_event_test.cpp
     infra/ipc/sync_named_pipe_client_test.cpp
     infra/utils/string_utils_test.cpp
@@ -30,3 +29,6 @@ target_link_libraries(scriptorium_felt_tests PRIVATE
     gtest_main
     gmock_main
 )
+
+include(GoogleTest)
+gtest_discover_tests(scriptorium_felt_tests)
