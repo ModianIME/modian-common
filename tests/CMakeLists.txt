@@ -26,8 +26,8 @@ target_link_libraries(scriptorium_felt_tests PRIVATE
     scriptorium::felt::service::protocol
     scriptorium::felt::infra::utils
     scriptorium::felt::infra::ipc
-    gtest_main
-    gmock_main
+    GTest::gtest_main
+    GTest::gmock
 )
 
 include(GoogleTest)
