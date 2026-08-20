@@ -31,4 +31,7 @@ target_link_libraries(scriptorium_felt_tests PRIVATE
 )
 
 include(GoogleTest)
-gtest_discover_tests(scriptorium_felt_tests)
+gtest_discover_tests(scriptorium_felt_tests
+    PROPERTIES
+        LABELS "felt-unit"
+)
