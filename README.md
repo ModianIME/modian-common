@@ -18,32 +18,7 @@ Felt exists to keep shared technical concerns explicit and reusable without coup
 
 Scriptorium is designed as a multi-process input method architecture with clear ownership boundaries between platform integration, input-method logic, presentation, and shared infrastructure.
 
-```text
-                           ┌──────────────────────┐
-                           │   Scriptorium Ink    │
-                           │    Stateless UI      │
-                           └──────────▲───────────┘
-                                      │
-                           RenderState / UserAction
-                                      │
-                           ┌──────────┴───────────┐
-                           │ Scriptorium Inkstone │
-                           │    Stateful Core     │
-                           └──────────▲───────────┘
-                                      │
-                        InputEvent / CompositionCommand
-                                      │
-                           ┌──────────┴───────────┐
-                           │  Scriptorium Brush   │
-                           │  Windows TSF Adapter │
-                           └──────────────────────┘
-
-
-                 ┌─────────────────────────────────────┐
-                 │          Scriptorium Felt           │
-                 │ Shared protocols and infrastructure │
-                 └─────────────────────────────────────┘
-```
+![Scriptorium Architecture](assets/Scriptorium%20Architecture%20V1.1.1.png)
 
 Felt provides the common boundaries that allow these components to communicate and share infrastructure without sharing their internal implementation details.
 
